@@ -25,6 +25,7 @@ class Engine:
                 continue
 
             action.perform(self, self.player)
+            self.update_fov()
 
     def update_fov(self) -> None:
         """Пересчитайте видимую область на основе точки зрения игроков."""

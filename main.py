@@ -24,7 +24,7 @@ def main() -> None:
     event_handler = EventHandler()
 
     player = Entity(int(screen_width / 2), int(screen_height / 2), "@", (255, 255, 255))
-    npc = Entity(int(screen_width / 2 - 5), int(screen_height / 2), "@", (255, 255, 0))
+    npc = Entity(int(screen_width / 2 - 5), int(screen_height / 2), "@", (255, 0, 0))
     entities = {npc, player}
     game_map = generate_dungeon(max_rooms, room_min_size, room_max_size, map_width, map_height, player)
 
